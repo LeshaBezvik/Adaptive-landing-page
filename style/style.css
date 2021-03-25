@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    max-width: 1500px;
+}
+.wrapper{
+    max-width: 1500px;
+}
+
+.header{
+    background-image: url(../img/headerbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-height: 670px;
+    height: 670px;
+    align-items: center;
+}
+
+.header-content{
+    display: flex;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.header-logo>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.header-logo>a:hover{
+    color: rgb(97, 97, 128);
+    transition: 0.3s ;
+}
+
+.header-menu{
+    display: flex;
+}
+
+.header-menu>li{
+    list-style: none;
+    font-size: large;
+
+}
+
+.header-menu>li>a{
+    text-decoration: none;
+    margin: 0 0 0 50px;
+    color: #fff;
+    font-size: larger;
+}
+
+.header-menu>li>a:hover{
+    color: rgb(97, 97, 128);
+    transition: 0.3s;
+}
+
+.line{
+    border: 2px solid;
+    color: #fff;
+    margin: 0;
+}
+
+.best-services{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.best-services-content{
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.575);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.best-services-content>h1{
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.hire-btn>a>button{
+    background-color: transparent;
+    color: #fff;
+    width: 25%;
+    border: 2px solid rgba(255, 255, 255, 0.575);
+}
+
+.hire-btn>a>button:hover{
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.3s ;
+
+}
+
+@media(max-width: 767px){
+    .best-services{
+        width: 80%;
+    }
+    .header-menu{
+        flex-direction: column;
+    }
+}
+
+.about-us{
+    display: flex;
+}
+
+.about-us-left{
+    width: 50%;
+}
+
+.about-us-left>img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.about-us-right{
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    margin: auto;
+}
+
+.about-us-header{
+    text-transform: uppercase;
+    font-family: Sansation-Regular,AdobeInvisFont,MyriadHebrew-Regular,MyriadPro-Regular;
+}
+
+.about-us-text{
+    font-family: AdobeInvisFont,MyriadHebrew-Regular,MyriadPro-Regular;
+    font-size: 18px;
+    text-align: left;
+}
+
+.about-us-btn>a>button{
+    background-color: #05A0AF;
+    width: 40%;
+    color: #fff;
+    font-family: NEOTERIC-Bold,AdobeInvisFont,MyriadHebrew-Regular,MyriadPro-Regular;
+    border: 2px solid #fff;
+    font-size: larger;
+}
+
+.about-us-btn>a>button:hover{
+    border: 2px solid #1a7c85;
+    transition: 0.3s ;
+}
+
+@media(max-width: 1199px){
+    .about-us{
+        flex-direction: column;
+    }
+    .about-us-right, .about-us-left{
+        width: 100%;
+    }
+    .about-us-left>img{
+        width: 100%;
+    }
+}
+
+.our-services-content{
+    background-color: #1a7c85;
+}
+
+.our-services-header{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.our-services-header>span{
+    width: 20%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    font-family: Sansation-Regular,AdobeInvisFont,MyriadHebrew-Regular,MyriadPro-Regular;
+}
+
+.line-services{
+    width: 30%;
+    line-height: 5%;
+    border: 3px solid rgb(252, 249, 249);
+}
+
+.our-services-main{
+    display: flex;
+}
+
+.our-services-block{
+    text-align: center;
+    margin: 20px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.322);
+    border-radius: 25px;
+}
+.our-services-block:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.74);
+    transition: 0.3s;
+}
+
+.our-services-block-content>div{
+    padding: 30px 10px 0 10px;
+}
+
+.our-services-block-content>img{
+    width: 40%;
+}
+
+.our-services-block-header{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+}
+
+.our-services-block-text{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.our-services-block-btn>a>button{
+    background-color: #05A0AF;
+    width: 50%;
+    height: 45px;
+    color: #fff;
+    font-family: NEOTERIC-Bold,AdobeInvisFont,MyriadHebrew-Regular,MyriadPro-Regular;
+    border: 2px solid #05A0AF;
+    font-size: larger;
+}
+
+.our-services-block-btn>a>button:hover{
+    border: 2px solid #7bc2c9;
+    transition: 0.3s ;
+}
+
+
+

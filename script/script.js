@@ -1,3 +1,23 @@
+//Адаптивное меню
+const menuIcon = document.querySelector('.menu-burger');
+const menuHeader = document.querySelector('.header-menu');
+
+if(menuIcon){    
+    menuIcon.addEventListener('click', function (e){
+        document.body.classList.toggle('lock'); //при открытом меню не скролится страничка
+        menuIcon.classList.toggle('active');
+        menuHeader.classList.toggle('active');
+    });
+    
+
+};
+
+
+
+
+
+
+//Слайдер
 const prev = document.getElementById('btn-prev');
 const next = document.getElementById('btn-next');
 const slides = document.querySelectorAll('.slide');

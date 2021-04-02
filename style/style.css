@@ -103,7 +103,7 @@ body.lock{
 .hire-btn>a>button{
     background-color: transparent;
     color: #fff;
-    width: 25%;
+    width: 35%;
     border: 2px solid rgba(255, 255, 255, 0.575);
 }
 
@@ -146,7 +146,7 @@ body.lock{
 
 .about-us-btn>a>button{
     background-color: #05A0AF;
-    width: 40%;
+    width: 50%;
     color: #fff;
     font-family: NEOTERIC-Bold,AdobeInvisFont,MyriadHebrew-Regular,MyriadPro-Regular;
     border: 2px solid #fff;
@@ -511,7 +511,6 @@ footer{
     color: #fff;
     text-transform: uppercase;
     border: 1px solid rgb(226, 200, 200);
-    width: 100px;
     border-radius: 4px;
     height: 50px;
 }
@@ -622,6 +621,15 @@ height: 40px;
     .questions-form>input{
         width: 30%;
     }
+    .questions-form>input:nth-child(1)::placeholder, .questions-form>input:nth-child(2)::placeholder, 
+.footer-form>input:nth-child(1)::placeholder{
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+    .our-services-block-btn>a>button{
+        width: 70%;
+    }
 
     /*---------------FOOTER----------------*/
     .footer-content{
@@ -698,6 +706,37 @@ height: 40px;
 }
 
 @media(max-width:480px){
+    .best-services-content>h1{
+        font-size: 20px;
+        -webkit-text-stroke-width: 1px;
+    }
+    .best-services-content>p{
+        font-size: 16px;
+    }
+    .hire-btn>a>button{
+        width: 70%;
+    }
+
+    .our-services-header>span{
+        font-size: 18px;
+        width: 100%;
+    }
+    .our-services-block-header{
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .our-services-block-text{
+        font-size: 14px
+    }   
+    .our-services-block-btn{
+        wi
+    }
+
+    .questions-form>input:nth-child(1),.questions-form>input:nth-child(2), .footer-form>input:nth-child(1){
+        width: 49%;
+        margin-bottom: 5px;
+    }
+
     /*--------Отзывы---------*/
     
     .photo-name{
@@ -720,6 +759,17 @@ height: 40px;
     .clients-content-bottom, .clients-content-top{
         padding: 0;
     }
-    
+
+    .product, .learn, .company{
+        width: 30%;
+    }
+    .product>h3, .learn>h3, .company>h3{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .product>p, .learn>p, .company>p{
+        font-size: 16px;
+        text-decoration: underline;
+    }
 }
 
